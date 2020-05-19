@@ -1,1 +1,11 @@
 SiFive Mainline BSP
+
+1. Program on SD card
+
+  $ xzcat sdcard-hifive-unleashed-a00.img.xz | sudo dd of=/dev/mmcblk0
+  $ sudo sync
+
+2. Set SD boot mode, MSEL[3:0] to 1011
+
+More information at wiki:
+https://wiki.amarulasolutions.com/bsp/riscv/sifive/hifive-unleashed.html
